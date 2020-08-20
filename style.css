@@ -1,0 +1,56 @@
+.globale{
+    width: 1280px;
+    height: 425px;
+    position: relative;
+    transform: translateX(-5000px);
+    transition-duration: 5000ms;
+    
+
+}
+.voiture{
+    position: absolute;
+    margin-left: 5000px;
+
+}
+.voiture_roue_avant{
+    position: absolute;
+    margin-left: 5267px;
+    padding-top: 180px;
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+.voiture_roue_arriere{
+    position: absolute;
+
+    margin-left: 5840px;
+    padding-top: 180px;
+}
+.voiture_roue_arriere ,.voiture_roue_avant{
+
+-webkit-animation: rotate-center 0.1s ease-in-out infinite both;
+            animation: rotate-center 0.1s ease-in-out infinite both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+
+
